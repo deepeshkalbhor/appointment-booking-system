@@ -1,3 +1,10 @@
 spring:
-  application:
-    name: appointment-booking-system
+  datasource:
+    url: jdbc:postgresql://localhost:5432/appointment_db
+    username: postgres
+    password: yourpassword
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
